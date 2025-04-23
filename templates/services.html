@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Services{% endblock %}
+
+{% block body %}
+<style>
+    body {
+        background-color: #f0f8ff; /* Light blue background for a calming effect */
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .services-section {
+        padding: 20px;
+    }
+    .services-header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .services-title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
+    }
+    .services-intro {
+        margin-top: 10px;
+        line-height: 1.6;
+    }
+    .services-list li {
+        background-color: #ffffff; /* White background for list items */
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+        padding: 10px 15px;
+        margin: 10px 0;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .services-list li:hover {
+        transform: scale(1.02); /* Slight zoom effect on hover */
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+    }
+    .services-note {
+        margin-top: 20px;
+        font-style: italic;
+    }
+</style>
+
+<section class="services-section">
+    <div class="container">
+        <header class="services-header">
+            <h1 class="services-title" style="color: #ff69b4; font-family: 'Brush Script MT', cursive; font-size: 3rem;">Our Sweet Services</h1>
+            <p class="services-intro" style="color: #555; font-size: 1.2rem;">Welcome to <strong style="color: #ff4500;">Vadilal Ice Cream</strong>! Indulge in a world of flavors and creativity, where every bite is a celebration of joy and taste.</p>
+        </header>
+        <div class="services-content">
+            <p style="font-size: 1.1rem;">At Vadilal Ice Cream, we offer a variety of irresistible options to satisfy your sweet tooth:</p>
+            <ul class="services-list" style="list-style-type: none; padding: 0;">
+                <li><strong style="color: #ff6347;">🍦 Ice Cream:</strong> Dive into our extensive range of flavors, each crafted to perfection.</li>
+                <li><strong style="color: #ffa500;">🎂 Ice Cream Cake:</strong> Make your celebrations extra special with our delectable ice cream cakes.</li>
+                <li><strong style="color: #ff1493;">🍨 Ice Cream Sundae:</strong> Relish our sundaes, topped with luscious sauces and crunchy nuts.</li>
+                <li><strong style="color: #32cd32;">🍧 Ice Cream Cone:</strong> Enjoy the timeless charm of our classic ice cream cones.</li>
+                <li><strong style="color: #1e90ff;">🥤 Ice Cream Shake:</strong> Refresh yourself with our creamy shakes, available in a variety of flavors.</li>
+                <li><strong style="color: #8a2be2;">🍹 Ice Cream Float:</strong> Enjoy the fizzy delight of our ice cream floats, a mix of soda and ice cream.</li>
+                <li><strong style="color: #ff4500;">🍪 Ice Cream Sandwich:</strong> Savor the perfect blend of cookies and ice cream in our sandwiches.</li>
+                <li><strong style="color: #ff69b4;">🍡 Ice Cream Mochi:</strong> Try our soft and chewy mochi ice cream, a delightful fusion of textures.</li>
+                <li><strong style="color: #ff6347;">🍭 Cotton Candy Ice Cream:</strong> Experience the whimsical sweetness of cotton candy in ice cream form.</li>
+                <li><strong style="color: #ffa500;">🍋 Lemon Sorbet:</strong> A refreshing and tangy treat for those who love citrusy flavors.</li>
+                <li><strong style="color: #32cd32;">🍓 Strawberry Cheesecake Ice Cream:</strong> Indulge in the creamy richness of cheesecake with a fruity twist.</li>
+            </ul>
+            <p class="services-note" style="color: #555; font-size: 1rem;">We take pride in using premium ingredients and adhering to the highest hygiene standards to ensure every bite is safe and delicious.</p>
+            <p style="font-size: 1.1rem;">Whether you're craving a sweet treat or a refreshing drink, Vadilal Ice Cream has something for everyone. Visit us today and let us make your day sweeter!</p>
+            <p style="text-align: center; font-size: 1.2rem; color: #ff4500; font-weight: bold;">We look forward to serving you!</p>
+        </div>
+    </div>
+</section>
+{% endblock body %}

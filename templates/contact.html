@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block body %}
+<div class="container-fluid px-0 position-relative">
+    <img src="https://wallpaperaccess.com/full/3124540.jpg" alt="Contact Us" class="img-fluid w-100" style="height: 400px; object-fit: cover; animation: fadeIn 2s;">
+  
+    <div class="position-absolute top-50 start-50 translate-middle text-center px-4 py-3" style="background-color: rgba(240, 240, 240, 0.8); font-weight: bold; color: #000; border-radius: 10px; font-size: 1.5rem; animation: slideInDown 1.5s;">
+      <h2 style="font-size: 2.5rem;">Contact Us</h2>
+      <p style="font-size: 1.4rem;">We'd love to hear from you! Reach out with your questions, feedback, or inquiries.</p>
+    </div>
+</div>
+
+<div class="container my-5">
+    <h3 class="text-center my-4" style="animation: fadeInUp 1.5s;">Get in Touch</h3>
+    <div class="container my-4">
+        <form action="/contact" method="POST" style="animation: zoomIn 1.5s;">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="number" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100" style="font-size: 1.2rem; animation: pulse 2s infinite;">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<!-- Add some additional content -->
+<div class="container my-5 text-center" style="animation: fadeIn 2s;">
+    <h4>Follow Us</h4>
+    <p>Stay connected with us on social media!</p>
+    <div>
+        <a href="#" class="btn btn-outline-primary mx-2"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#" class="btn btn-outline-info mx-2"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#" class="btn btn-outline-danger mx-2"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+</div>
+
+<!-- Add animations -->
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+</style>
+{% endblock body %}
