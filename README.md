@@ -1,4 +1,5 @@
 # Project Documentation
+@author - yashdeepsinghbais
 
 ## Overview
 This project is a Django-based web application. Below is an explanation of the key files, directories, and their purposes.
@@ -56,3 +57,4 @@ This project is a Django-based web application. Below is an explanation of the k
 ### Additional Notes
 - Ensure that sensitive data like database credentials and secret keys are not exposed in public repositories.
 - Use Django's migration system to manage changes to the database schema.
+  
